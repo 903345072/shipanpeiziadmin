@@ -1,0 +1,27 @@
+spring:
+#  rabbitmq:
+#    host: 112.126.76.191
+#    port: 5672
+#    username: admin
+#    password: 903345072
+#    virtual-host: my_vhost
+#    listener:
+#      simple:
+#        concurrency: 1
+#        max-concurrency: 1
+#        acknowledge-mode: manual #手动应答
+#        retry:
+#          enabled: true
+#          max-attempts: 100000
+#        prefetch: 1
+  datasource:
+    url: jdbc:mysql://localhost:3306/mybatis_learn?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true&allowMultiQueries=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  config-location: classpath:mapconfig/sqlMapConfig.xml
+wwyy:
+  appid: 164915
+  appSecret: 3f00cad83fc94c6cb5c0c8677c839b71
